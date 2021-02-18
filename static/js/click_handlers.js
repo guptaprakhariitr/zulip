@@ -364,6 +364,7 @@ exports.initialize = function () {
         $_("#message_edit_content").hide();
         $_("#markdown_preview").hide();
         $_("#undo_markdown_preview").show();
+        $_("#undo_markdown_preview").trigger("focus");
         $_("#preview_message_area").show();
 
         compose.render_and_show_preview(
@@ -386,6 +387,7 @@ exports.initialize = function () {
         $_("#preview_message_area").hide();
         $_("#preview_content").empty();
         $_("#markdown_preview").show();
+        $_("#markdown_preview").trigger("focus");
     });
 
     // MUTING
